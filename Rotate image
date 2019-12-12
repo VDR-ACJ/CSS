@@ -1,0 +1,14 @@
+let rotateAngle = 90;
+
+function rotate(image) {
+  image.setAttribute("style", "transform: rotate(" + rotateAngle + "deg)");
+  rotateAngle = rotateAngle + 90;
+}
+
+#rotater {
+  transition: all 0.3s ease;
+  border: 0.0625em solid black;
+  border-radius: 3.75em;
+}
+
+<img id="rotater" onclick="rotate(this)" src="https://upload.wikimedia.org/wikipedia/en/e/e0/Iron_Man_bleeding_edge.jpg"/>
